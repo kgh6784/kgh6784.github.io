@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "JiHon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "SNU 응용바이오공학과 박사과정 & SNUH 융합의학과"
+  location         : "South Korea"
+  email            : "hunscoder@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
