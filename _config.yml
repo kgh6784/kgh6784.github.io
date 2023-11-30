@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "JiHOon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "SNU 응용바이오공학과(박사과정) & SNUH 융합의학과 | 의료인공지능을 연구합니다"
+  bio              : "SNU 응용바이오공학과(박사과정) \ SNUH 융합의학과 \ 의료인공지능을 연구합니다"
   location         : "South Korea"
   email            : "hunscoder@gmail.com"
   links:
