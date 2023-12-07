@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Hoon"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "./assets/images/bio-photo.jpg"
   bio              : "어쩌다 보니 의료인공지능을 연구하는 박사과정생이 되었다"
   location         : "Seoul & Suwon"
   email            : "hunscoder@gmail.com"
