@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Deep Learning with MED"
+title                    : "함께 성장하는 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "KJH"
 description              : "An amazing website."
 url                      : "https://kgh6784.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "JiHOon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "SNU 응용바이오공학과(박사과정) \ SNUH 융합의학과"
-  location         : "South Korea"
+  name             : "Hoon"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "어쩌다 보니 의료인공지능을 연구하는 박사과정생이 되었다"
+  location         : "Seoul & Suwon"
   email            : "hunscoder@gmail.com"
   links:
     - label: "Email"
