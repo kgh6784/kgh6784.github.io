@@ -110,18 +110,13 @@ author:
   location         : "Seoul & Suwon"
   email            : "hunscoder@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hunscoder@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://blog.naver.com/hoon_life"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kgh6784"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/hi.ho0n"
+
 
 # Site Footer
 footer:
