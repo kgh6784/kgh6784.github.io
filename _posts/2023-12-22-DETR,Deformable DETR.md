@@ -38,7 +38,7 @@ Object Detection을 ViT를 이용하여 개선하려는 시도가 많이 이루�
 ![image-20231222171833818](/../images/2023-12-22 DETR, Deformable DETR/image-20231222171833818.png)
 
 - $L_{match}$는 아래와 같다. 
-- $\(\hat{p}_{\sigma(i)}(c_i)\)$는 클래스 확률을 예측하는 부분이고, $L_{box}$는 L1 loss와 IoU loss의 조합이다.
+- 앞의 부분은 클래스 확률을 예측하는 부분이고, $L_{box}$는 L1 loss와 IoU loss의 조합이다.
 
 ![image-20231222172140738](/../images/2023-12-22 DETR, Deformable DETR/image-20231222172140738.png)
 
@@ -48,7 +48,7 @@ Object Detection을 ViT를 이용하여 개선하려는 시도가 많이 이루�
 
 #### 성능
 
-- 기존의 RCCNN 계열의 모델보다 좋은 성능을 냄.
+- 기존의 RCNN 계열의 모델보다 좋은 성능을 냄.
 - 작은 객체에서의 성능은 좋지 않음.
 
 ![image-20231222172852960](/../images/2023-12-22 DETR, Deformable DETR/image-20231222172852960.png)
