@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "DETR & Deformable DETR"
-categories: daily
+categories: paper
 tag: ['detection', 'vit']
 toc: true
 use_math: true
