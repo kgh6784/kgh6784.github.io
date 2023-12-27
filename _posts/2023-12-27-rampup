@@ -1,0 +1,54 @@
+---
+layout: single 옵션
+title:  "Rampup을 통해 lr을 적절하게 변화시키자"
+categories: skill
+tag: ['skill']
+toc: true
+use_math: true
+typora-root-url: ../                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+---
+
+학습 과정에서 하이퍼마라미터 값을 점차적으로 변화시킬 수 있다. (Learning rate와 같은)
+
+관련하여 MC-Net 저자들의 github에 function들을 정의해 놓은 것이 있다.
+
+
+
+1) sigmoid_rampup
+
+- 지수적으로 증가하는 sigmoid 형태
+- `lampup_length`가 0이면 1.0을 반환하고, 그렇지 않으면 입력된 'current' 값을 0과 `rampup_length` 사이로 제한한 뒤에 sigmoid 함수를 적용하여 0과 1 사이의 값을 반환하도록 한다. 
+
+```python
+def sigmoid_rampup(current, rampup_length):
+    if rampup_length == 0:
+        return 1.0
+    else:
+        current = np.clip(current, 0.0, rampup_length)
+        phase = 1.0 - current / rampup_length
+        return float(np.exp(-5.0 * phase * phase))
+```
+
+
+
+2. linear_rampup
+
+```python
+def linear_rampup(current, rampup_length):
+    assert current >=0 and rampup_length >= 0
+    if current >= rampup_length:
+        return 1.0
+    else:
+        return current / rampup_length
+```
+
+
+
+3. cosine_rampdown
+
+```python
+def cosine_rampdown(current, rampdown_length):
+    assert 0 <= current <= rampdown_length
+    return float(.5 * (np.cos(np.pi*current/rampdown_length)+1))
+```
+
