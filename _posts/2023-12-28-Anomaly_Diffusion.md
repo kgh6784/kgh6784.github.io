@@ -20,7 +20,7 @@ Diffusion을 이용해서 anomaly detection을 했는데 성능이 정말 잘 �
 
 ![image-20231228073019432](/../images/2023-112-28-Anomaly_Diffusion/image-20231228073019432.png)
 
-(3) <font color = 'red'>`AnomalyDiffusion`</font> : 논문에서 제안하는 방법론. 대규모 데이터셋으로 pretrain된 `LDM(Latent Diffusion Model)`을 이용한다. 이를 통해 몇 개의 anomaly data만으로도 더 나은 표현을 뽑아낼 수 있다. 
+(3) <font color = 'red'>`Anomaly Diffusion`</font> : 논문에서 제안하는 방법론. 대규모 데이터셋으로 pretrain된 `LDM(Latent Diffusion Model)`을 이용한다. 이를 통해 몇 개의 anomaly data만으로도 더 나은 표현을 뽑아낼 수 있다. 
 
 ![image-20231228073429940](/../images/2023-112-28-Anomaly_Diffusion/image-20231228073429940.png)
 
@@ -63,7 +63,7 @@ t번 째 denoising 단계에서 $\hat{x}_0 = D(p_{\theta}(\hat{z}_0 | z_t, e))$�
 
 `Attention re-weighting`
 
-조금 더 재가중되는 메커니즘에 대해서 살펴보자. 앞에서 만든 $w_m$를 이용한다. 이를 이용해 cross-attention을 adaptive하게 control하여 모델이 눈에 덜 띄는 영역을 더 집중하도록 한다. Query는 latent code $z_t$로부터, key와 value는 anomaly embedding e로부터 계산된다. $φ_i$는 U-Net의 intermediate 표현이고 $W^i$는 학습가능하다. Self-attention은 다음과 같은 형식으로 진행된다. $RW-Attn(Q, K, V ) = m^′_ c · V$
+조금 더 재가중되는 메커니즘에 대해서 살펴보자. 앞에서 만든 $w_m$를 이용한다. 이를 이용해 cross-attention을 adaptive하게 control하여 모델이 눈에 덜 띄는 영역을 더 집중하도록 한다. Query는 latent code $z_t$로부터, key와 value는 anomaly embedding e로부터 계산된다. 그리고 $φi$는 U-Net의 intermediate 표현이고 $W^i$는 학습가능하다. Self-attention은 다음과 같은 형식으로 진행된다. RW-Attn(Q, K, V ) = $m^′_ c · V$
 
 ![image-20231228082648450](/../images/2023-12-28-Anomaly_Diffusion/image-20231228082648450.png)
 
