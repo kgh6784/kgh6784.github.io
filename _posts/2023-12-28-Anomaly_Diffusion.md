@@ -20,7 +20,7 @@ Diffusion을 이용해서 anomaly detection을 했는데 성능이 정말 잘 �
 
 ![image-20231228073019432](/../images/2023-112-28-Anomaly_Diffusion/image-20231228073019432.png)
 
-(3) <font color = 'red'>Anomaly Diffusion</font> : 논문에서 제안하는 방법론. 대규모 데이터셋으로 pretrain된 `LDM(Latent Diffusion Model)`을 이용한다. 이를 통해 몇 개의 anomaly data만으로도 더 나은 표현을 뽑아낼 수 있다. 
+(3) <font color = 'red'>Anomaly_Diffusion</font> : 논문에서 제안하는 방법론. 대규모 데이터셋으로 pretrain된 `LDM(Latent Diffusion Model)`을 이용한다. 이를 통해 몇 개의 anomaly data만으로도 더 나은 표현을 뽑아낼 수 있다. 
 
 ![image-20231228073429940](/../images/2023-112-28-Anomaly_Diffusion/image-20231228073429940.png)
 
