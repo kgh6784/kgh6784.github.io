@@ -57,7 +57,9 @@ LDM을 통해 데이터를 생성하면, 때때로 전체 mask를 채우지 못�
 
 
 
-t번 째 denoising 단계에서 $\hat{x}_0 = D(p_{\theta}(\hat{z}0 | zt, e))$를 계산한다. (D는 LDM의 디코더). 이후 마스크 m 내에서 $\hat{x}_0$과 y 사이의 픽셀 수준 차이를 계산한다. 차이를 기반으로 weight map $w_m$을 계산한다. 이 때 Adapte Scaling Softmax(ASS)가 적용된다. Re-weighting 과정을 통해 앞서 말한 눈에 띄지 않는 영역까지 가지고 온다.
+t번 째 denoising 단계에서 $\hat{x}_0 = D(p_{\theta}(\hat{z}0 | zt, e))$를 계산한다. (D는 LDM의 디코더). 
+
+이후 마스크 m 내에서 $\hat{x}_0$과 y 사이의 픽셀 수준 차이를 계산한다. 차이를 기반으로 weight map $w_m$을 계산한다. 이 때 Adapte Scaling Softmax(ASS)가 적용된다. Re-weighting 과정을 통해 앞서 말한 눈에 띄지 않는 영역까지 가지고 온다.
 
 ![image-20231228082234829](/../images/2023-12-28-Anomaly_Diffusion/image-20231228082234829.png)
 
